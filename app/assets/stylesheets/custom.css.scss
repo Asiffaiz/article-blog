@@ -1,0 +1,81 @@
+$navbar-default-bg:#fff;
+
+@import 'bootstrap/dist/css/bootstrap';
+
+#logo
+{
+float:left;
+font-size: 2em;
+text-transform: uppercase;
+font-style: italic;
+font-weight: bold;
+letter-spacing: -1px;
+text-shadow: 1px 1px  #212f3d ;
+
+}
+#logo:hover
+{
+  color: #fff;
+  text-decoration: none;
+}
+.nav-item{
+  font-size: 20px;
+}
+
+#hove:hover{
+ color: black;
+}
+.center{
+  text-align: center;
+}
+.jumbotron{
+  background-image: asset-url('jumbo1.jpg');
+  background-size:cover;
+  height: 500px;
+  margin-top: 8px;
+}
+.jumbotron h1{
+  font-weight: bolder;
+  color:#DC143C;
+  text-align: center;
+  margin-top: 130px;
+  font-family: sans-serif;
+}
+.footer{
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+  border-top-style:groove;
+  margin-top: 30px;
+  background-color: Gainsboro;
+
+
+}
+.footy{
+  /*padding-top: 50px; */
+
+}
+.fot-item{
+  color: black;
+}
+
+.back{
+  margin-top: 10px;
+  float:right;
+}
+.article-actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+
+}
+.article-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body{
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}

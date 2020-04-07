@@ -1,0 +1,21 @@
+<h2> All articles listing here! </h2>
+
+<% @articles.each do |articles|  %>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div class="well well-lg">
+      <div class="article-title">
+          <%=link_to articles.title,article_path(articles)%>
+        </div>
+      <div class="article-body">
+        <%= truncate(articles.description,length:100)%>
+      </div>
+      <div class="article-actions">
+      <%= link_to 'Edit',edit_article_path(articles), class:"btn btn-primary" %>
+      <%= link_to 'Delete',article_path(articles),method: :delete, data: {confirm:"Are yoy sure want to delete Article?"},class:"btn btn-danger" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% end %>

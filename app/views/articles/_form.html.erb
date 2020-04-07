@@ -1,0 +1,25 @@
+
+<%= render 'shared/errors',obj:@article %>
+
+<%= form_for @article do |f| %>
+
+<div class="form-group">
+  <div class="col-md-2">
+    <%= f.label :Title%>
+  </div>
+  <div class="col-md-6">
+  <%= f.text_field :title ,class:"form-control",placeholder:"Title of article",autofocus:true%>
+</div>
+</div>
+
+<div class="form-group">
+  <div class="col-md-2">
+    <%= f.label :Description%>
+      </div>
+        <div class="col-md-8">
+  <%= f.text_area :description ,rows:10,class:"form-control",placeholder:"Description of article",autofocus:true%>
+      </div>
+</div>
+<%= f.submit class:"btn btn-primary" %>
+
+<% end %>
